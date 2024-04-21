@@ -1,3 +1,5 @@
+import tensorflow as tf
+import tensorflow.keras as keras
 
 """
 Progress bar for displaying various process progress
@@ -22,5 +24,3 @@ class ProgressBar:
     def update_display(self, frac: float, suffix:str=''):
         self.update(frac)
         self.display(suffix)
-
-
